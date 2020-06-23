@@ -1,0 +1,75 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+a:link{
+    border: 3px solid red;
+}
+
+p:hover{
+    color: blue;
+}
+
+a:visited{
+    color: green;
+}
+
+:checked{
+    margin-left: 20px;
+}
+
+:disabled{
+    background-color: grey;
+}
+
+ol:empty{
+    border: 2px dotted aquamarine;
+}
+
+ol:empty::before{
+    content: "Aquí hay una lista_______";
+}
+
+ol:empty::after{
+    content: "________Pero está vacía";
+}
+
+p:nth-child(2n){
+    background-color: aquamarine;
+}
+
+ol:only-child{
+    color: yellow;
+}
+
+input::placeholder{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+:first-child{
+    border-radius: 20px;
+    border: 3px solid blue;
+}
+
+:last-child::first-letter{
+    font-size: 50px;
+}
+
+p::first-line{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ol:first-of-type{
+    background-color: coral;
+}
+
+:in-range{
+    margin: 30px;
+}
+
+::selection{
+    color: green;
+    background-color: blue;
+}

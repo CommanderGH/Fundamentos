@@ -1,0 +1,36 @@
+div{
+    border: 3px solid blue;
+    height: 60px;
+    width: 30%;
+}
+
+#dos{
+    position: relative;
+    left: 30%;
+    top: -66px;
+}
+
+#tres{
+    position: relative;
+    left: 60%;
+    top: -132px;
+}
+
+#cuatro{
+    position: relative;
+    top: -132px;
+    height: 120px;
+    width: 60%;
+}
+
+#cinco{
+    position: relative;
+    left: 60%;
+    top: -262px;
+}
+
+#seis{
+    position: relative;
+    left: 60%;
+    top: -264px;
+}

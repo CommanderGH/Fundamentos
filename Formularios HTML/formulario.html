@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segundo Ejercicio</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+      </head>
+
+      <body>
+
+        <h1 class="center">Formularios de Admisión y LLenado de Datos</h1>
+
+        <br>
+
+        <p class="center">Para poder formar parte de esta empresa, le pedimos que por favor llene todos los datos</p>
+        <p class="center"> en el siguiente formulario. Por favor, llene los campos con información real, ya que esta</p>
+        <p class="center">será verificada porteriormente en el proceso de admisión.</p>
+
+        <br>
+
+        <fieldset id="principal">
+          <legend id="internet" class="center">EMPRENDIMIENTO S.A.:</legend>
+          <div id="container">
+          <fieldset class="second">
+          <legend>Datos Personales</legend>
+          <label for="fname">Nombre:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Apellido:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="birthday">Fecha De Nacimiento:</label>
+          <input type="date" id="birthday" name="birthday"><br>
+          </fieldset>
+          <br>
+          <fieldset class="second">
+            <legend>Contratación</legend>
+            <label for="tipo">Tipo de Contrato:</label><br><br>         
+            <input type="radio" id="tipo" name="type">
+            <label for="tipo">A Término Indefinido</label><br>
+            <input type="radio" id="tipo2" name="type">
+            <label for="tipo2">A Término Definido</label><br>
+            <input type="radio" id="tipo3" name="type">
+            <label for="tipo">Contrato de Práctica</label><br><br>
+            <fieldset id="ult">
+              <legend>Salario</legend>
+            <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+              <br><label for="a">Salario Base:</label>
+              <input type="number" id="a" min="500000" max="2500000"><br>
+              <label for="b">N° De Turnos a Cumplir:</label>
+              <input type="number" id="b" name="sal" min="1" max="3"><br><br>
+              <label for="x">Salario Total:</label>
+              <output name="x" for="a b"></output>
+            </fieldset>
+            </form>
+          </fieldset>
+          <br>
+          <fieldset class="second">
+          <legend>Horario Laboral</legend>
+          <label for="mes">Mes de Inicio de Trabajo:</label>
+          <input type="month" id="mes" name="month"><br><br>
+          <label for="hora">Hora de Inicio de Jornada:</label>
+          <input type="time" id="hora" name="time"><br><br>
+          <label for="horaF">Hora de Fin de Jornada:</label>
+          <input type="time" id="horaF" name="time"><br><br>
+          <label for="semana">Semana de Vacaciones:</label>
+          <input type="week" id="semana" name="week"><br>
+          </fieldset>
+          <br>
+          </div>
+          <br>
+          <input type="submit" value="Submit">          
+        </fieldset>
+
+        <br>
+
+        <p class="center" id="pie">Muchas gracias por completar el formulario. Posteriormente, 
+          se le informará para continuar el proceso de admisión a esta gran empresa</p>
+
+      </body>
+</html>

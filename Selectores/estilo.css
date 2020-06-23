@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    border-bottom: 2px groove red;
+}
+
+[data-dueDate="NA"]{
+    color: brown;
+}
+
+[data-content~="500g"]{
+    font-family: Verdana;
+}
+
+[data-price="100000"]{
+    color: red;
+}
+
+[class]{
+    text-align: center;
+}
+
+[data-content*="u"]{
+    text-decoration: underline red;
+}
+
+[data-dueDate$="2021"]{
+    font-size: 30px;
+}
+
+[data-dueDate^="1"]{
+    text-transform: uppercase;
+}
+
+[data-content$="g"]{
+    background-color: silver;
+}
+
+[data-content="10000g"]{
+    margin: 100px 0px;
+}
+
+[data-dueDate*="10"]{
+    font-size: 60px;
+}
+
+[class="Comida"]{
+    border: 3px solid green;
+}
+
+[data-price="3000"]{
+    border-radius: 30px;
+}
+
+[class="Producto"]{
+    padding: 20px 0px;
+}
+
+[data-dueDate$="2021"]{
+    background-color: springgreen;
+}
+
+[data-price="10000"]{
+    font-family: monospace;
+}
+
+[data-dueDate*="06"]{
+    text-align: left;
+}
+
+[data-price*="0"]{
+    font-style: italic;
+}
+
+[data-price*="500"]{
+    color: yellowgreen;
+}
+
+[data-price~="10000"]{
+    text-align: right;
+}
+
+[data-price="7500"]{
+    font-style: oblique;
+}
+
+[data-price^="2"]{
+    text-shadow: 10px;
+}

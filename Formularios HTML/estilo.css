@@ -1,0 +1,60 @@
+@font-face{ font-family: Oswald; src: url(oswald.ttf);}
+
+*{
+    background-color: rgb(231, 229, 229);
+}
+
+p{
+    font-family: Oswald;
+    letter-spacing: 3px;
+}
+
+#internet{
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+#pie{
+    border: 2px solid red;
+    text-transform: uppercase;
+    margin: unset;
+    border-radius: 25px;
+    padding: initial;
+    font-size: 15px;
+    text-indent: 10px;
+}
+
+form{
+    background-color: rgb(189, 190, 241);
+}
+
+legend{
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: red;
+    border-bottom: 2px groove red;
+}
+
+#principal{
+    background-color: rgb(68, 68, 235);
+}
+
+#container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.second{
+    background-color: rgb(139, 139, 247);
+    width: 33%;
+}
+
+#ult{
+    background-color: rgb(164, 164, 247);
+}

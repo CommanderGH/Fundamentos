@@ -1,0 +1,12 @@
+section div ul li span{
+    color: red;
+}
+
+section div .con-borde.par.prueba{
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+.ultimos .mayusculas span{
+    text-transform: uppercase;
+}
