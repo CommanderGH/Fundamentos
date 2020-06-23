@@ -1,0 +1,5 @@
+git init
+git add -A                                        //agrega todos los archivos
+git commit -m "Comment"                           //hace commit con un comentario
+git config user.name "Commander"
+git config user.email "email@example.com"
