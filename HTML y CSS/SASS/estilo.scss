@@ -1,0 +1,43 @@
+$base-size: 10px;
+$col-main: yellow;
+$col-second: blue;
+
+%font{
+    font-size: $base-size;
+    font-family: fantasy;
+    color: $col-main;
+}
+
+@mixin rotate($property) {
+    rotate: $property;
+}
+
+.container{
+    background-color: $col-second;
+    ul{
+        li{
+            @extend %font;
+        }
+    }
+    p{
+        @extend %font;
+        margin-top: 300px / 1080px * 100%;
+        margin-right: 450px / 1080px * 100%;
+        margin-left: 450px / 1080px * 100%;
+        margin-bottom: 300px / 1080px * 100%;
+    }
+    div#uno{
+        @include rotate(15);
+    }
+    div#dos{
+        @include rotate(30);
+    }
+    div#tres{
+        @include rotate(45);
+    }
+    div#cua{
+        &tro{
+            @include rotate(60);
+        }
+    }
+}

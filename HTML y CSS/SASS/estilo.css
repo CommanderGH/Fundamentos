@@ -1,0 +1,22 @@
+.container ul li, .container p {
+  font-size: 10px;
+  font-family: fantasy;
+  color: yellow; }
+
+.container {
+  background-color: blue; }
+  .container p {
+    margin-top: 27.7777777778%;
+    margin-right: 41.6666666667%;
+    margin-left: 41.6666666667%;
+    margin-bottom: 27.7777777778%; }
+  .container div#uno {
+    rotate: 15; }
+  .container div#dos {
+    rotate: 30; }
+  .container div#tres {
+    rotate: 45; }
+  .container div#cuatro {
+    rotate: 60; }
+
+/*# sourceMappingURL=estilo.css.map */
