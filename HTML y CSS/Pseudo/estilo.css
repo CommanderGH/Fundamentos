@@ -32,7 +32,7 @@ ol:empty::before{
 }
 
 ol:empty::after{
-    content: "________Pero está vacía";
+    content: "_______Pero está vacía";
 }
 
 p:nth-child(2n){
