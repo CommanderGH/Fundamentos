@@ -3,7 +3,7 @@ section div ul li span{
 }
 
 section div .con-borde.par.prueba{
-    border: 1px solid blue;
+    border: 2px solid blue;
     border-radius: 20px;
 }
 
