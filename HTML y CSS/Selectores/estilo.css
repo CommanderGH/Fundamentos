@@ -46,7 +46,7 @@ h1{
 }
 
 [class="Comida"]{
-    border: 3px solid green;
+    border: 5px solid green;
 }
 
 [data-price="3000"]{
