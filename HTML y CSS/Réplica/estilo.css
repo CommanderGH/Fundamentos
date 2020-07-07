@@ -1,0 +1,119 @@
+@font-face{font-family: VarelaRound; src: url(varelaRound.ttf);}
+
+#main-tittle{
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.container{
+    margin: 5px 10px;
+}
+
+div{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: flex-start;
+    font-family: VarelaRound;
+    justify-content: space-evenly;
+}
+
+#year{
+    border-radius: 20px;
+    border: 1px dotted grey;
+    padding-left: 60px;
+    width: 260px;
+}
+
+h2{
+    margin: 0px 10px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+a{
+    color: #d05555;
+}
+
+select{
+    font-size: 60px;
+    margin: 30px;
+}
+
+.month{
+    width: 100%;
+    min-width: 220px;
+    font-size: 20px;
+    margin: 45px 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name{
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.label{
+    width: 14%;
+    text-align: center;
+}
+
+.border{
+    border-bottom: 2px solid #d05555;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.day{
+    font-size: 22px;
+    width: 14.28%;
+    margin-top: 30px;
+    padding-top: 5px;
+}
+
+#footer{
+    font-size: 35px;
+}
+
+#footer div{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.holiday{
+    color: white;
+    background-color: #7c0303;
+    border-radius: 25px 0px;
+}
+
+@media only screen and (min-width: 780px) {
+    .month{
+        width: 40%;
+    }
+    .container{
+        margin: 0px 10px;
+    }
+    #main-tittle{
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .month{
+        width: 30%;
+    }
+    .container{
+        margin: 0px 5px;
+    }
+    #main-tittle{
+        margin-bottom: 120px;
+    }
+}
