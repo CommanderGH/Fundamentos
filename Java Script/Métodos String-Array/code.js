@@ -5,7 +5,9 @@ str4 = "    Daniel     "
 arr1 = [1,2,3,4,5];
 arr2 = ["Hola","Pera","Mango"];
 
+
 // PARTE 1 DE LA TAREA
+
 
 // Métodos de String
 
@@ -43,3 +45,17 @@ console.log(arr1.reverse());
 
 console.log(arr2.unshift("Comida","Dos Veces"));
 console.log(arr2);
+
+
+// PARTE 2 DE LA TAREA
+
+
+// Implementar Some
+
+console.log(arr1.some((x) => x>3));
+console.log(arr1.some((x) => x>5));
+
+// Map e Invertir Arreglo
+
+arr3 = arr2.map((x) => x.split("").reverse().join(""));
+console.log(arr3);
