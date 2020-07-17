@@ -9,6 +9,7 @@ var inputName = document.getElementById("inputName")
 var inputEmail = document.getElementById("inputEmail")
 var inputPass = document.getElementById("inputPass")
 var allSpc = ["[", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "-", "=", "]", "{", "}", ";", ":", "|", ",", ".", "<", ">", "?", "'", '"']
+var user = {}
 
 // FUNCIONES
 
@@ -201,6 +202,27 @@ inputName.addEventListener("keyup", function () {
     }
     let result = newName.join(" ")
     inputName.value = result
+})
+
+inputName.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault()
+        document.getElementById("verifyBtn").click()
+    }
+})
+
+inputEmail.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault()
+        document.getElementById("verifyBtn").click()
+    }
+})
+
+inputPass.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault()
+        document.getElementById("verifyBtn").click()
+    }
 })
 
 function validateInput() {
@@ -471,7 +493,7 @@ function createUser() {
     let address = document.getElementById("inputAddress").value
     let age = document.getElementById("inputAge").value
     let occupation = document.getElementById("inputOccupation").value
-    var user = {
+    user = {
         nombre: name,
         correo: email,
         telefono: tel,

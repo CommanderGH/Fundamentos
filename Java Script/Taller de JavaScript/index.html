@@ -14,12 +14,12 @@
         <p>A continuación está la solución de los cuatro puntos del Taller
             de JavaScript. Cada uno de los recuadros es la solución de un punto
             del 1 al 4 empezando desde arriba y de forma consecutiva. <strong>
-            El ejercicio de compensación fue añadido en el Punto 3 (tercer recuadro)
-            </strong>, al cual se le agregó un campo de contraseña (el cual no está incluido
+            El ejercicio de compensación fue añadido en el Punto 3 (tercer recuadro)</strong>
+            , al cual se le agregó un campo de contraseña (el cual no está incluido
             en el enunciado original de punto 3), al cual se le hacen todas las 
             verificaciones requeridas en el ejercicio de compensación. Cada punto 
-            tiene implementado el sistema de notificaciones tostada de <strong>SweetAlert2
-            </strong> el cual le da más estilo a los mensajes de alerta que se implementaron
+            tiene implementado el sistema de notificaciones tostada de <strong>SweetAlert2</strong>
+            el cual le da más estilo a los mensajes de alerta que se implementaron
             en los diferentes ejercicios. Cada ejercicio tiene funcionalidades adicionales
             a las pedidas en el taller, así que analice cada punto con atención. El código
             fue hecho con HTML, CSS y JavaScript puro, lo único que importé fue la librería
@@ -47,7 +47,8 @@
         <div id="punto2">
             <h3>Deuda Actual</h3>
             <p>Ingrese abonos y préstamos y calcule su balance usando los botones
-                que se encuentran abajo.
+                que se encuentran abajo. Seleccione si desea realizar un abono o un
+                préstamo y luego ingrese un valor.
             </p>
             <p><strong>Nota:</strong> Puede usar Enter para activar
                 el botón "Añadir al Balance".</p>
@@ -79,17 +80,20 @@
                 verificar si son correctas o para obtener información de los
                 criterios que aún no han sido cumplidos.
             </p>
+            <p><strong>Nota:</strong> Puede usar Enter estando en cualquiera de
+                las entradas para activar el botón "Validar Entradas".</p>
                 <input id="inputName" class="centeredButton" type="text" placeholder="Nombre y Apellido">
                 <input id="inputEmail" class="centeredButton" type="text" placeholder="Correo Electrónico">
                 <input id="inputPass" class="centeredButton" type="text" placeholder="Contraseña">
                 <br>
                 <br>
-                <button class="centeredButton" onclick="validateInput()">Validar Entradas</button>
+                <button id="verifyBtn" class="centeredButton" onclick="validateInput()">Validar Entradas</button>
             <p>Los criterios que deben cumplir las entradas son los siguientes:</p>
             <ul>
                 <li>Deben haber almenos dos palabras en el campo "Nombre y Apellido"
                     (correspondientes al nombre y al apellido).</li>
                 <li>El correo debe contener el caracter "@".</li>
+                <li>El correo solo puede contener el caracter "@" una vez.</li>
                 <li>El correo debe contener el caracter ".".</li>
                 <li>El caracter "." debe estar después del caracter "@".</li>
                 <li>La contraseña debe tener entre 10 y 20 caracteres, contener
