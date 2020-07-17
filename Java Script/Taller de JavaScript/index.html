@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller De JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TALLER DE JAVA SCRIPT</h1>
+        <p>A continuación está la solución de los cuatro puntos del Taller
+            de JavaScript. Cada uno de los recuadros es la solución de un punto
+            del 1 al 4 empezando desde arriba y de forma consecutiva. <strong>
+            El ejercicio de compensación fue añadido en el Punto 3 (tercer recuadro)
+            </strong>, al cual se le agregó un campo de contraseña (el cual no está incluido
+            en el enunciado original de punto 3), al cual se le hacen todas las 
+            verificaciones requeridas en el ejercicio de compensación. Cada punto 
+            tiene implementado el sistema de notificaciones tostada de <strong>SweetAlert2
+            </strong> el cual le da más estilo a los mensajes de alerta que se implementaron
+            en los diferentes ejercicios. Cada ejercicio tiene funcionalidades adicionales
+            a las pedidas en el taller, así que analice cada punto con atención. El código
+            fue hecho con HTML, CSS y JavaScript puro, lo único que importé fue la librería
+            de SweetAlert2, de resto todo es hecho desde cero.
+        </p>
+        <div id="punto1">
+            <h3>Pila de Tareas</h3>
+            <p>Ingrese el elemento que desea añadir en el cuadro
+                de texto y presione el botón "Añadir" para añadir
+                el elemento a la lista. Presione "Eliminar" para eliminar
+                el último elemento añadido.
+            </p>
+            <p><strong>Nota:</strong> Puede usar Enter para activar
+                el botón "Añadir Tarea".</p>
+            <input id="inputTask" type="text" maxlength="20" placeholder="Ingrese una Tarea">
+            <button id="addTaskBtn" onclick="add()">Añadir Tarea</button>
+            <button onclick="remove()">Eliminar Última Tarea</button>
+            <br>
+            <input type="checkbox" name="taskCapitalizeBtn" id="taskCapitalizeBtn">
+            <label for="taskCapitalizeBtn">Primera Letra Mayúscula</label>
+            <input type="checkbox" name="taskUpperCaseBtn" id="taskUpperCaseBtn">
+            <label for="taskUpperCaseBtn">Letras En Mayúscula Sostenida</label>
+            <ul id="listTasks"></ul>
+        </div>
+        <div id="punto2">
+            <h3>Deuda Actual</h3>
+            <p>Ingrese abonos y préstamos y calcule su balance usando los botones
+                que se encuentran abajo.
+            </p>
+            <p><strong>Nota:</strong> Puede usar Enter para activar
+                el botón "Añadir al Balance".</p>
+            <input id="inputBalance" type="number" min="1" placeholder="Ingrese un Número">
+            <button id="addBalanceBtn" onclick="addBalance()">Añadir al Balance</button>
+            <button onclick="calculateBalance()">Calcular Balance</button>
+            <br>
+            <input type="radio" id="deposit" name="type" checked>
+            <label for="deposit">Abono</label>
+            <input type="radio" id="loan" name="type">
+            <label for="loan">Préstamo</label>
+            <p id="displayBalance">Añada valores y calcule su balance...</p>
+            <hr size="5" noshade>
+            <p>Utilice el siguiente botón para mostrar todos los elementos
+                presentes en el arreglo de balances (abonos y préstamos).
+                También puede borrar todos los datos ingresados hasta el momento
+                haciendo uso del botón "Limpiar Registro".
+            </p>
+            <button class="centeredButton" onclick="printBalance()">Imprimir Elementos del Balance</button>
+            <ul id="listBalance"></ul>
+            <button class="centeredButton" onclick="cleanBalance()">Limpiar Registro</button>
+            <br>
+        </div>
+        <div id="punto3">
+            <h3>Formulario de Verificación</h3>
+            <p>Ingrese su nombre, su apellido y su correo en el siguiente
+                formulario. Ambas entradas tienen diferentes requerimientos
+                para ser válidas. Utilice el botón "Validar Entradas" para
+                verificar si son correctas o para obtener información de los
+                criterios que aún no han sido cumplidos.
+            </p>
+                <input id="inputName" class="centeredButton" type="text" placeholder="Nombre y Apellido">
+                <input id="inputEmail" class="centeredButton" type="text" placeholder="Correo Electrónico">
+                <input id="inputPass" class="centeredButton" type="text" placeholder="Contraseña">
+                <br>
+                <br>
+                <button class="centeredButton" onclick="validateInput()">Validar Entradas</button>
+            <p>Los criterios que deben cumplir las entradas son los siguientes:</p>
+            <ul>
+                <li>Deben haber almenos dos palabras en el campo "Nombre y Apellido"
+                    (correspondientes al nombre y al apellido).</li>
+                <li>El correo debe contener el caracter "@".</li>
+                <li>El correo debe contener el caracter ".".</li>
+                <li>El caracter "." debe estar después del caracter "@".</li>
+                <li>La contraseña debe tener entre 10 y 20 caracteres, contener
+                    al menos un número, una letra en mayúscula, una letra en
+                    minúscula, y un caracter especial.
+                </li>
+            </ul>
+            <p>Los caracteres especiales permitidos los puede visulazar con el siguiente botón: <br>
+                
+            </p>
+            <button class="centeredButton" onclick="spcList()">Mostrar Caracteres Especiales Permitidos</button>
+            <br>
+        </div>
+        <div id="punto4">
+            <h3>Formulario de Guardado e Impresión</h3>
+            <p>Ingrese los datos del siguiente formularioy luego con el botón
+                de "Guardar e Imprimir" visualice los datos que ingresó en cada
+                campo impresos por consola como un objeto.
+            </p>
+            <p><strong>Nota:</strong> Este formulario no realiza ningún tipo
+                de Verificación para las entradas, por lo que su contenido es libre (incluso vacío).</p>
+                <input id="inputName2" type="text" placeholder="Nombre" class="centeredButton">
+                <br>
+                <input id="inputEmail2" type="text" placeholder="Correo Electrónico" class="centeredButton">
+                <br>
+                <input id="inputTel" type="number" class="centeredButton" placeholder="Teléfono">
+                <br>
+                <input id="inputAddress" type="text" class="centeredButton" placeholder="Dirección">
+                <br>
+                <input id="inputAge" type="number" min="0" class="centeredButton" placeholder="Edad">
+                <br>
+                <input id="inputOccupation" type="text" class="centeredButton" placeholder="Profesión">
+                <br>
+                <br>
+                <button class="centeredButton" onclick="createUser()">Guardar e Imprimir</button>
+            <br>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+</body>
+
+</html>
